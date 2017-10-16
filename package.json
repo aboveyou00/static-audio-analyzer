@@ -1,0 +1,32 @@
+{
+    "name": "static-audio-analyzer",
+    "description": "Temporary project meant to statically analyze audio tracks and output CSV files describing certain portions of it.",
+    "version": "0.0.0",
+    "main": "src/index.js",
+    "devDependencies": {},
+    "dependencies": {
+        "audio-analyser": "^1.0.2",
+        "audio-buffer-utils": "^5.1.1",
+        "audio-loader": "^1.0.3",
+        "audio-through": "^2.2.3",
+        "lame": "^1.2.4",
+        "mkdirp": "^0.5.1",
+        "rimraf": "^2.6.2",
+        "speaker": "^0.4.0",
+        "stream-sink": "^2.1.0"
+    },
+    "scripts": {
+        "start": "npm run clean-output && node .",
+        "clean-output": "rimraf output && mkdirp output"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aboveyou00/static-audio-analyzer.git"
+    },
+    "author": "Brandon Slade",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/aboveyou00/static-audio-analyzer/issues"
+    },
+    "homepage": "https://github.com/aboveyou00/static-audio-analyzer#readme"
+}
